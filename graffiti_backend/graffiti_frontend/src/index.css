@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+.modern-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modern-btn {
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.modern-btn:hover {
+  transform: scale(1.05);
+}
+
+.art-image, .artist-image {
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+}
+
+.form-modern input, .form-modern textarea, .form-modern select {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.form-modern input:focus, .form-modern textarea:focus, .form-modern select:focus {
+  border-color: #007bff;
+  box-shadow: none;
+  outline: none;
+}
+
+h1, h2, .display-4 {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.c-item {
+  height: 480px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.reaction-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.rating {
+  margin-top: 10px;
+}
+
+.admin-dashboard {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard .modern-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.admin-dashboard h1, .admin-dashboard h2 {
+  color: #1a73e8;
+}
+
+.admin-dashboard .nav-tabs .nav-link {
+  color: #333;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+
+.admin-dashboard .nav-tabs .nav-link.active {
+  background-color: #1a73e8;
+  color: #fff;
+  border-color: #1a73e8;
+}
+
+.admin-dashboard .btn-primary {
+  background-color: #1a73e8;
+  border-color: #1a73e8;
+}
+
+.admin-dashboard .btn-primary:hover {
+  background-color: #1557b0;
+  border-color: #1557b0;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.text-primary {
+  color: #1a73e8 !important;
+}
+
+/* Public Pages Styling */
+.about-page, .contact-page, .gallery-page {
+  background-color: #f4f7fa;
+  padding: 40px 0;
+}
+
+.about-page h1, .contact-page h1, .gallery-page h1 {
+  color: #2c3e50;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.about-page p, .contact-page p, .gallery-page p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.about-page .modern-card, .contact-page .modern-card, .gallery-page .modern-card {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-page .modern-card:hover, .contact-page .modern-card:hover, .gallery-page .modern-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.main-content {
+  margin-left: 250px;
+  flex-grow: 1;
+}
+
+.admin-card {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  background: #fff;
+  border-radius: 4px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.thead-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #c82333;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #5a6268;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  background-color: #0056b3;
+  color: #fff !important;
+}
